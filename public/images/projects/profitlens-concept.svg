@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="680" viewBox="0 0 1000 680" role="img" aria-label="PROFITLENS concept illustration">
+<rect width="1000" height="680" rx="30" fill="#dfefdf"/>
+<circle cx="830" cy="130" r="190" fill="#bcdbb3" opacity=".44"/>
+<circle cx="140" cy="610" r="195" fill="#bcdbb3" opacity=".30"/>
+<path d="M0 518Q250 455 500 545T1000 528V680H0Z" fill="#bcdbb3" opacity=".45"/>
+<rect x="155" y="135" width="690" height="415" rx="29" fill="#284937" opacity=".12" transform="translate(13 19)"/>
+<rect x="155" y="135" width="690" height="415" rx="29" fill="#fffef9" stroke="#659876" stroke-width="9"/>
+<rect x="155" y="135" width="690" height="66" rx="25" fill="#659876"/>
+<rect x="155" y="178" width="690" height="25" fill="#659876"/>
+<circle cx="189" cy="167" r="9" fill="#ffffff" opacity=".92"/><circle cx="221" cy="167" r="9" fill="#ffffff" opacity=".6"/><circle cx="253" cy="167" r="9" fill="#ffffff" opacity=".4"/>
+<text x="310" y="175" fill="#fffef9" font-size="20" font-family="Arial,sans-serif" font-weight="700" letter-spacing="3">PROFITLENS</text>
+<rect x="203" y="224" width="586" height="283" rx="22" fill="#e6efe4"/>
+<path d="M239 442L330 395 403 420 485 334 562 365 651 272 750 292" fill="none" stroke="#608e6c" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="330" cy="395" r="11" fill="#537b5b"/><circle cx="485" cy="334" r="11" fill="#537b5b"/><circle cx="651" cy="272" r="11" fill="#537b5b"/>
+<rect x="256" y="263" width="104" height="14" rx="7" fill="#bdcfba"/><rect x="256" y="293" width="73" height="11" rx="5" fill="#cddbc8"/>
+<rect x="250" y="463" width="475" height="11" rx="5" fill="#d1decd"/>
+<rect x="635" y="227" width="120" height="40" rx="12" fill="#d2e0c0"/>
+<text x="694" y="254" font-size="24" fill="#537b5b" text-anchor="middle" font-weight="bold">+%</text>
+<text x="500" y="620" text-anchor="middle" fill="#496b55" font-family="Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="4">CONCEPT ARTWORK — NOT A SCREENSHOT</text>
+</svg>

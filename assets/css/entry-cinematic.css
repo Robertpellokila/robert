@@ -1,0 +1,74 @@
+/* My Little World v0.8.9: cinematic intro, followed by small chooser over actual Three.js world. */
+.mlw-entry-root { position: fixed; inset: 0; z-index: 2147483000; pointer-events: none; font-family: 'DM Sans', sans-serif; }
+.mlw-intro, .mlw-choice-layer { position: absolute; inset: 0; pointer-events: auto; }
+.mlw-intro { overflow: hidden; display: flex; align-items: center; justify-content: center; background: radial-gradient(ellipse at 50% 35%, #f6f5e9, #e5eee2 64%, #c8dbc8); color: #264b39; }
+.mlw-intro-grain { pointer-events:none; position:absolute;inset:0;opacity:.32;background-image: radial-gradient(#7c9c7d 0.7px,transparent .9px);background-size:22px 22px;mask-image:linear-gradient(to bottom,transparent,#000 35%,#000 70%,transparent) }
+.mlw-intro-content { position:relative;display:flex;flex-direction:column;align-items:center;text-align:center;width:min(94vw,800px);animation:mlw-intro-zoom 2.8s cubic-bezier(.18,.65,.22,1) both; }
+.mlw-intro-eyebrow, .mlw-intro-greeting { font-weight:750; font-size:11px; letter-spacing:.2em; color:#6e9078 }
+.mlw-intro-frame { position: relative; height: clamp(152px,24vh,260px); aspect-ratio: 1 / 1; margin: 17px 0 20px; border-radius: 28px; overflow:hidden; border:6px solid #fffdf6;box-shadow: 0 20px 70px #315c3d35, 0 0 0 1px #d3e0d0; transform: rotate(-3deg); }
+.mlw-intro-frame img { width:100%; height:100%; object-fit:cover; object-position:center 28%; display:block; }
+.mlw-intro-photo-placeholder { height:100%;display:flex;align-items:center;justify-content:center;background:#bed2c2;color:#29513d;font-size:90px;font-weight:750; }
+.mlw-intro-photo-placeholder span { color:#bb8c52 }
+.mlw-intro-photo-label { position:absolute;bottom:0;left:0;right:0;padding:12px 8px;background:linear-gradient(transparent,#1b3a30c9);color:#fff;font-size:9px;font-weight:800;letter-spacing:.1em }
+.mlw-intro h1 { font-family:'Space Grotesk',sans-serif;font-size:clamp(42px,7.6vw,90px);line-height:1.025;letter-spacing:-.08em;margin:6px 0 12px;max-width:760px }
+.mlw-intro h1 em { display:block;font-style:normal;color:#719779 }
+.mlw-intro-tagline { color:#66836d;font-size:clamp(12px,2vw,17px);margin:0 }
+.mlw-intro-skip { position:absolute;top:clamp(16px,4vw,45px);right:clamp(16px,4vw,45px);background:#fffdfaed;color:#3e6449;border:1px solid #d2e3d6;padding:11px 18px;border-radius:999px;cursor:pointer;font-size:13px;font-weight:650; }
+.mlw-intro-skip:hover { background:#edf5ec }
+.mlw-intro-progress { position:absolute;bottom:45px;left:50%;width:min(190px,55vw);height:3px;background:#cfdfcc;transform:translateX(-50%);overflow:hidden;border-radius:4px }
+.mlw-intro-progress span { display:block;width:100%;height:100%;background:#56845f;transform-origin:left center;animation:mlw-intro-load 2.9s linear both }
+@keyframes mlw-intro-load { from { transform:scaleX(0) } to { transform:scaleX(1) } }
+@keyframes mlw-intro-zoom {0%{opacity:0;transform:scale(.72) translateY(26px);filter:blur(9px)}20%{opacity:1;filter:blur(0)}76%{transform:scale(1.02)}100%{opacity:1;transform:scale(1.12) translateY(-6px)}}
+.mlw-cinematic-intro-leave-active { transition:opacity .68s ease, transform .68s ease,filter .68s ease }
+.mlw-cinematic-intro-leave-to { opacity:0; transform:scale(1.35);filter:blur(8px) }
+.mlw-choice-layer { display:flex;align-items:center;justify-content:flex-end;padding:clamp(20px,7vw,130px);overflow:hidden }
+.mlw-choice-shade { position:absolute;inset:0;background:linear-gradient(90deg,#10281925 0%,#0b21172e 44%,#17332173 100%);backdrop-filter:blur(1.5px);pointer-events:none }
+.mlw-choice-card { position:relative;z-index:2;width:min(410px,100%);padding:clamp(25px,3.3vw,36px);background:rgba(255,253,246,.97);color:#234232;border:1px solid #dce6db;border-radius:26px;box-shadow:0 30px 110px #1332225e;backdrop-filter:blur(20px); }
+.mlw-choice-kicker { display:flex;align-items:center;gap:9px;color:#708978;font-size:10px;letter-spacing:.14em;font-weight:850 }
+.mlw-choice-dot { height:7px;width:7px;border-radius:50%;background:#78b17e;box-shadow:0 0 0 5px #e6f0e4 }
+.mlw-choice-card h2 {font-family:'Space Grotesk',sans-serif;font-size:clamp(34px,3.4vw,47px);letter-spacing:-.06em;line-height:1.05;margin:21px 0 14px }
+.mlw-choice-card h2 em { color:#779d80;font-style:normal }
+.mlw-choice-card p { color:#718474;font-size:13px;line-height:1.72;margin:0 0 23px }
+.mlw-choice-actions {display:grid;gap:10px}
+.mlw-choice-btn { display:flex;gap:11px;align-items:center;text-align:left;border:1px solid #d9e3d5;border-radius:13px;padding:12px;cursor:pointer;background:#f7f9f4;color:#2c5138;transition:transform .18s,border-color .18s,background .18s }
+.mlw-choice-btn:hover { transform:translateY(-2px);border-color:#8cac94 }
+.mlw-choice-btn.primary{background:#305942;color:#fff;border-color:#305942}
+.mlw-choice-btn.primary:hover{background:#406e50}
+.mlw-choice-btn:disabled{opacity:.4;cursor:not-allowed;transform:none}
+.mlw-choice-symbol{display:grid;place-items:center;flex:none;width:43px;height:43px;border-radius:11px;font-size:25px;background:#e2ece0;color:#3e7551}
+.mlw-choice-btn.primary .mlw-choice-symbol{background:#48755a;color:#fff}
+.mlw-choice-btn>span:nth-child(2){flex:1;display:grid;gap:4px}
+.mlw-choice-btn strong {font-size:13px;letter-spacing:-.015em}
+.mlw-choice-btn small {font-size:10.5px;color:#829686;line-height:1.4}
+.mlw-choice-btn.primary small {color:#cde2d0}
+.mlw-choice-arrow {font-size:19px}
+.mlw-choice-footer {display:flex;justify-content:space-between;gap:9px;margin-top:21px;font-size:9px;color:#94a69a;letter-spacing:.09em;font-weight:750}
+.mlw-choice-caption {position:absolute;left:clamp(24px,5vw,75px);bottom:clamp(24px,4vw,54px);display:flex;flex-direction:column;gap:5px;color:#fff;font-size:11px;font-weight:750;letter-spacing:.13em;text-shadow:0 2px 12px #122d2b80}
+.mlw-choice-caption span+span {font-size:9px;opacity:.75}
+.mlw-mode-modal-enter-active {transition:opacity .7s ease}.mlw-mode-modal-enter-active .mlw-choice-card {animation:mlw-card-in .7s cubic-bezier(.16,.7,.26,1) both}
+.mlw-mode-modal-enter-from {opacity:0}
+.mlw-mode-modal-leave-active {transition:opacity .26s ease}.mlw-mode-modal-leave-to {opacity:0}
+@keyframes mlw-card-in {from {opacity:0;transform:translateY(20px) scale(.96)}to{opacity:1;transform:translateY(0) scale(1)}}
+/* This is only a non-WebGL fallback. Supported devices show the real world canvas. */
+.mlw-choice-fallback {position:absolute;inset:0;background:linear-gradient(135deg,#d7e8d7,#bdd8c5 60%,#9fbea5)}
+.mlw-fallback-road {position:absolute;width:120%;height:18%;top:52%;left:-10%;transform:rotate(-15deg);background:#e9eadc;border:3px solid #f3f3e8}
+.mlw-fallback-home {position:absolute;left:19%;top:27%;width:20%;height:25%;background:#f6eddb;border:16px solid #8eaeb4;border-radius:12px;transform:skewY(-8deg);box-shadow:16px 22px 0 #88a99a}
+.mlw-fallback-home.other {left:41%;top:61%;width:14%;height:18%;border-color:#b2accc;transform:skewY(8deg)}
+.mlw-fallback-tree {position:absolute;left:11%;top:40%;width:60px;height:60px;border-radius:50%;background:#699e76;box-shadow:0 20px 0 #699e76}
+.mlw-fallback-tree.other {left:57%;top:25%;transform:scale(1.3)}
+/* Hide the navigation and all content controls while visitors see the 3D preview. */
+.portfolio-v08-root.is-welcome-preview .site-shell > :not(.scene-layer):not(.journey-track) {opacity:0;pointer-events:none!important;visibility:hidden}
+.portfolio-v08-root.is-welcome-preview .lite-portfolio {visibility:hidden}
+.mlw-intro-skip:focus-visible,.mlw-choice-btn:focus-visible {outline:3px solid #89bd93;outline-offset:4px}
+@media(max-width:760px){
+ .mlw-choice-layer{align-items:flex-end;justify-content:center;padding:16px 13px calc(20px + env(safe-area-inset-bottom,0px))}
+ .mlw-choice-card{width:min(460px,100%);padding:23px 20px;border-radius:23px}
+ .mlw-choice-card h2{font-size:34px;margin:15px 0 10px}
+ .mlw-choice-card p{margin-bottom:15px}
+ .mlw-choice-caption{top:28px;bottom:auto;left:21px}
+ .mlw-intro-frame{height:clamp(135px,22vh,220px)}
+ .mlw-intro h1{font-size:clamp(41px,8vw,62px)}
+ .mlw-intro-skip{top:18px;right:18px}
+}
+@media(max-height:650px){.mlw-intro-frame{height:130px}.mlw-intro-content{transform:scale(.9)}.mlw-choice-card{padding:16px 20px}.mlw-choice-card h2{margin:8px 0}.mlw-choice-card p{margin-bottom:12px}.mlw-choice-footer{margin-top:11px}}
+@media(prefers-reduced-motion:reduce){.mlw-entry-root *,.mlw-entry-root *::before,.mlw-entry-root *::after{animation:none!important;transition:none!important}}

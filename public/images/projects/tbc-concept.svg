@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="680" viewBox="0 0 1000 680" role="img" aria-label="BATTLE CARDS concept illustration">
+<rect width="1000" height="680" rx="30" fill="#f4e7c8"/>
+<circle cx="830" cy="130" r="190" fill="#dbc98d" opacity=".44"/>
+<circle cx="140" cy="610" r="195" fill="#dbc98d" opacity=".30"/>
+<path d="M0 518Q250 455 500 545T1000 528V680H0Z" fill="#dbc98d" opacity=".45"/>
+<rect x="155" y="135" width="690" height="415" rx="29" fill="#284937" opacity=".12" transform="translate(13 19)"/>
+<rect x="155" y="135" width="690" height="415" rx="29" fill="#fffef9" stroke="#557864" stroke-width="9"/>
+<rect x="155" y="135" width="690" height="66" rx="25" fill="#557864"/>
+<rect x="155" y="178" width="690" height="25" fill="#557864"/>
+<circle cx="189" cy="167" r="9" fill="#ffffff" opacity=".92"/><circle cx="221" cy="167" r="9" fill="#ffffff" opacity=".6"/><circle cx="253" cy="167" r="9" fill="#ffffff" opacity=".4"/>
+<text x="310" y="175" fill="#fffef9" font-size="20" font-family="Arial,sans-serif" font-weight="700" letter-spacing="3">BATTLE CARDS</text>
+<rect x="196" y="240" width="205" height="252" rx="22" fill="#7b9d83" transform="rotate(-11 300 360)"/>
+<rect x="222" y="221" width="205" height="252" rx="22" fill="#f5f1dd" stroke="#4b7661" stroke-width="9" transform="rotate(-5 325 355)"/>
+<rect x="456" y="230" width="204" height="252" rx="22" fill="#f1e9be" stroke="#4b7661" stroke-width="9" transform="rotate(8 555 358)"/>
+<circle cx="317" cy="341" r="55" fill="#bdd4ae"/><path d="M283 371L295 318 338 299 362 370Z" fill="#668f75"/>
+<circle cx="552" cy="326" r="52" fill="#91b9bf"/><path d="M516 361L528 311 564 297 588 365Z" fill="#557d8c"/>
+<rect x="257" y="404" width="138" height="18" rx="9" fill="#d9e2c9"/><rect x="500" y="404" width="131" height="18" rx="9" fill="#d8dbb7"/>
+<rect x="684" y="270" width="80" height="142" rx="15" fill="#d6e6d5"/>
+<rect x="711" y="295" width="26" height="26" rx="5" fill="#678b74"/>
+<path d="M696 347Q725 320 750 347M695 365Q725 335 751 365" stroke="#688b78" stroke-width="7" fill="none"/>
+<text x="500" y="620" text-anchor="middle" fill="#496b55" font-family="Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="4">CONCEPT ARTWORK — NOT A SCREENSHOT</text>
+</svg>

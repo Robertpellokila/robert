@@ -1,0 +1,48 @@
+{
+  "name": "my-little-world-portfolio",
+  "version": "0.8.13",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "test:journey": "node scripts/test-journey.cjs",
+    "test:camera": "node scripts/test-camera.cjs",
+    "test:content": "node scripts/test-content.cjs",
+    "test:logic": "node scripts/test-journey.cjs && node scripts/test-camera.cjs && node scripts/test-content.cjs && node scripts/test-living.cjs && node scripts/test-living-runtime.cjs && node scripts/test-visitor.cjs && node scripts/test-performance.cjs && node scripts/test-mobile-v081.cjs && node scripts/test-mobile-v082.cjs && node scripts/test-room-v083.cjs && node scripts/test-room-v084.cjs && node scripts/test-room-v085.cjs && node --test scripts/test-v087.cjs && node scripts/test-welcome-v088.cjs && node scripts/test-entry-v089.cjs && node scripts/test-about-tree-v0811.cjs && node scripts/test-contact-v012.cjs && node scripts/test-invitation-v0813.cjs",
+    "test:living": "node scripts/test-living.cjs",
+    "check:syntax": "node scripts/check-syntax.cjs",
+    "test:smoke": "node scripts/test-living-runtime.cjs",
+    "test:visitor": "node scripts/test-visitor.cjs",
+    "test:performance": "node scripts/test-performance.cjs",
+    "test:mobile": "node scripts/test-mobile-v081.cjs",
+    "test:mobile:v082": "node scripts/test-mobile-v082.cjs",
+    "test:room": "node scripts/test-room-v083.cjs && node scripts/test-room-v084.cjs",
+    "test:room:v084": "node scripts/test-room-v084.cjs",
+    "test:room:v085": "node scripts/test-room-v085.cjs",
+    "test:v087": "node --test scripts/test-v087.cjs",
+    "test:welcome": "node scripts/test-welcome-v088.cjs",
+    "test:entry": "node scripts/test-entry-v089.cjs",
+    "test:about-portrait": "node scripts/test-about-portrait-v0810.cjs",
+    "test:about-tree": "node scripts/test-about-tree-v0811.cjs",
+    "test:contact": "node scripts/test-contact-v012.cjs",
+    "test:invitation": "node scripts/test-invitation-v0813.cjs"
+  },
+  "dependencies": {
+    "nuxt": "^3.17.0",
+    "vue": "^3.5.0",
+    "vue-router": "^4.5.0",
+    "three": "^0.180.0",
+    "gsap": "^3.13.0"
+  },
+  "devDependencies": {
+    "@types/three": "^0.180.0",
+    "typescript": "^5.8.0"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

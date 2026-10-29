@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="680" viewBox="0 0 1000 680" role="img" aria-label="MEETSPACE concept illustration">
+<rect width="1000" height="680" rx="30" fill="#dce9f7"/>
+<circle cx="830" cy="130" r="190" fill="#bad0e9" opacity=".44"/>
+<circle cx="140" cy="610" r="195" fill="#bad0e9" opacity=".30"/>
+<path d="M0 518Q250 455 500 545T1000 528V680H0Z" fill="#bad0e9" opacity=".45"/>
+<rect x="155" y="135" width="690" height="415" rx="29" fill="#284937" opacity=".12" transform="translate(13 19)"/>
+<rect x="155" y="135" width="690" height="415" rx="29" fill="#fffef9" stroke="#668a9c" stroke-width="9"/>
+<rect x="155" y="135" width="690" height="66" rx="25" fill="#668a9c"/>
+<rect x="155" y="178" width="690" height="25" fill="#668a9c"/>
+<circle cx="189" cy="167" r="9" fill="#ffffff" opacity=".92"/><circle cx="221" cy="167" r="9" fill="#ffffff" opacity=".6"/><circle cx="253" cy="167" r="9" fill="#ffffff" opacity=".4"/>
+<text x="310" y="175" fill="#fffef9" font-size="20" font-family="Arial,sans-serif" font-weight="700" letter-spacing="3">MEETSPACE</text>
+<rect x="189" y="227" width="412" height="282" rx="17" fill="#eaf3fa"/>
+<rect x="618" y="227" width="193" height="132" rx="16" fill="#e4f1e7"/>
+<rect x="618" y="376" width="193" height="133" rx="16" fill="#e4f1e7"/>
+<circle cx="395" cy="334" r="61" fill="#719eaa"/><rect x="314" y="403" width="162" height="79" rx="33" fill="#9fc3b2"/>
+<circle cx="689" cy="281" r="24" fill="#e3a185"/><rect x="646" y="310" width="90" height="34" rx="17" fill="#96b8a1"/>
+<circle cx="691" cy="426" r="23" fill="#ad9778"/><rect x="646" y="454" width="90" height="33" rx="17" fill="#88aac8"/>
+<rect x="229" y="250" width="112" height="13" rx="6" fill="#cfdfec"/>
+<rect x="231" y="466" width="70" height="17" rx="8" fill="#bfd2e3"/>
+<text x="500" y="620" text-anchor="middle" fill="#496b55" font-family="Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="4">CONCEPT ARTWORK — NOT A SCREENSHOT</text>
+</svg>

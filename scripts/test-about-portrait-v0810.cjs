@@ -1,0 +1,13 @@
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const path = require('node:path');
+const root = path.join(__dirname, '..');
+const decor = fs.readFileSync(path.join(root, 'world/roomDecor.ts'), 'utf8');
+const scene = fs.readFileSync(path.join(root, 'world/createInteriors.ts'), 'utf8');
+const about = decor.match(/function about\(p:Parent\)\s*\{([\s\S]*?)\n\}\nfunction experience/)?.[1];
+assert.ok(about, 'About room builder must be present');
+assert.doesNotMatch(about, /plant\(p,\s*-2\.83\s*,\s*-1\.52/, 'Foreground tree must not return in front of the portrait');
+assert.match(about, /plant\(p,2\.56,1\.22,\.42\)/, 'Small right-hand plant retained');
+assert.match(scene, /picture\.userData = \{roomId:'about',objectId:'portrait'/, 'Portrait remains interactive');
+assert.match(scene, /-1\.92, 1\.83, -2\.4/, 'Portrait position remains unchanged');
+console.log('4 About portrait regression checks passed.');
